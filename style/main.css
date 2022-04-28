@@ -1,6 +1,7 @@
 :root{
     --vermelho: red;
     --preto: black;
+    --branca: white;
 }
 
 * {
@@ -11,6 +12,7 @@
 
 body {
     background-color: var(--preto);
+    color: var(--branca);
 }
 
 header .logo{
@@ -19,7 +21,6 @@ header .logo{
     font-size: 50px;
     font-family: "Arial Black", 'Times New Roman', Times, serif;
 }
-
 
 
 header nav a{
@@ -37,4 +38,27 @@ header .container{
     align-items: center;
     justify-content: space-between;
 
+}
+
+/* Jogo Principal */
+
+.jogo-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,50%),rgba(0,0,0,100%)),url('../img/Nintendo/super-mario-all-stars.jpg');
+    
+    height: 400px;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.jogo-principal .descricao{
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-size: 40px;
 }
