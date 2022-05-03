@@ -4,6 +4,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="style/main.css">
+
+        <!--Font Awesome-->
+        <link rel="stylesheet" type="text/css" href="style/fontawesome-free/css/fontawesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style/fontawesome-free/css/solid.min.css">
+        
+        <!--Owl CSS-->
+        <link rel="stylesheet" type="text/css" href="style/owl/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="style/owl/owl.theme.default.min.css">
+
+        <!--Responsivo-->
+        <link rel="stylesheet" href="style/responsive.css">
+
         <title>PlayFlix</title>
     </head>
     <body>
@@ -26,14 +38,27 @@
                     <h2 class="titulo">Super Mario All Stars</h2>
                     <p class="descricao">Super Mario All-Stars - coletânea contendo remakes de Super Mario Bros., Super Mario Bros.:
                          The Lost Levels, Super Mario Bros. 2 e Super Mario Bros. 3. Além desta coletânea,
-                         esta coletânea também foi lançada para Super Nintendo e Wii;
+                         esta coletânea também foi lançada para Super Nintendo e Wii.
                     </p>
                 </div>
                 <div class="botoes">
-                    <button role="button" class="botao">Jogar Agora</button>
-                    <button role="button" class="botao">Mais Informações</button>
+                    <button role="button" class="botao"><i class="fa-solid fa-gamepad"></i>Jogar Agora</button>
+                    <button role="button" class="botao"><i class="fa-solid fa-circle-info"></i>Mais Informações</button>
                 </div>
             </div>
         </main>
+
+        <div class="carrosel-jogos">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-jogos" src="img/Nintendo/super-mario-all-stars.jpg" alt="Mario All Star">
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/owl/jquery.min.js"></script>
+        <script src="js/owl/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+        
     </body>
 </html> 
