@@ -8,6 +8,16 @@
         margin-top: 5px;
         width: 300px;
     }
+
+    footer ul {
+        height: 100px;
+
+    }
+
+    footer ul i{
+        
+        margin-left: 15px;
+    }
 }
 
 @media screen and (min-width: 1000px) {

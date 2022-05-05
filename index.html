@@ -8,6 +8,7 @@
         <!--Font Awesome-->
         <link rel="stylesheet" type="text/css" href="style/fontawesome-free/css/fontawesome.min.css">
         <link rel="stylesheet" type="text/css" href="style/fontawesome-free/css/solid.min.css">
+        <link rel="stylesheet" type="text/css" href="style/fontawesome-free/css/brands.min.css">
         
         <!--Owl CSS-->
         <link rel="stylesheet" type="text/css" href="style/owl/owl.carousel.min.css">
@@ -16,18 +17,17 @@
         <!--Responsivo-->
         <link rel="stylesheet" href="style/responsive.css">
 
-        <title>PlayFlix</title>
+        <title>GameFlix</title>
     </head>
     <body>
         <header>
             <div class="container">
-                <h1 class="logo">PlayFlix</h1>
+                <h1 class="logo">GameFlix<img class="navbarImage" src="img/controle.webp" alt="Controle de vídeo game" width=60></h1>
                 <nav>                  
-                    <a href="#" target=""><img class="navbarImage" src="img/controle.webp" alt="Controle de vídeo game" width=50></a>
                     <a href="#" target="">Início</a>
-                    <a href="#" target="">Sony</a>
-                    <a href="#" target="">Nintendo</a>
-                    <a href="#" target="">Fale Conosco</a>
+                    <a href="#Nintendo" target="">Nintendo</a>
+                    <a href="#Sony" target="">Sony</a>
+                    <a href="#Fale-Conosco" target="">Fale Conosco</a>
                 </nav> 
             </div>
         </header>
@@ -43,19 +43,148 @@
                 </div>
                 <div class="botoes">
                     <button role="button" class="botao"><i class="fa-solid fa-gamepad"></i>Jogar Agora</button>
-                    <button role="button" class="botao"><i class="fa-solid fa-circle-info"></i>Mais Informações</button>
+                    <button role="button" class="botao" id="btnMaisInfo"><i class="fa-solid fa-circle-info"></i>Mais Informações</button>
                 </div>
             </div>
         </main>
 
-        <div class="carrosel-jogos">
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <img class="box-jogos" src="img/Nintendo/super-mario-all-stars.jpg" alt="Mario All Star">
+        <section id="Nintendo">
+            <div class="carrosel-jogos">
+                <h2>Nintendo</h2>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-jogos" src="img/Nintendo/N1.jpg" alt="Mario All Star">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Nintendo/N2.jpg" alt="Mario Party 3">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Nintendo/N3.jpg" alt="Mario Kart Double Dash">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Nintendo/N4.jpg" alt="Donkey Kon Country Returns">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Nintendo/N5.jpg" alt="Super Mario 64">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Nintendo/N6.jpg" alt="Zelda Minish Cap">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Nintendo/N7.jpg" alt="Kirby Super Star">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Nintendo/N8.jpg" alt="007 Golden Eye">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Nintendo/N9.jpg" alt="Wario Land 3">
+                    </div>
                 </div>
             </div>
-        </div>
-        
+        </section>
+
+        <section id="Sony">
+            <div class="carrosel-jogos">
+                <h2>Sony</h2>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-jogos" src="img/Sony/S1.jpg" alt="Crash 2">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Sony/S2.jpg" alt="Winning Eleven 2000">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Sony/S3.jpg" alt="Street Fighter 2">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Sony/S4.jpg" alt="Winning Eleven Zico">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Sony/S5.jpg" alt="Tekken 7">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Sony/S6.jpg" alt="Spider Man 2">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Sony/S7.jpg" alt="Tomb Raider 2">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Sony/S8.jpg" alt="Megaman X6">
+                    </div>
+                    <div class="item">
+                        <img class="box-jogos" src="img/Sony/S9.jpg" alt="Need For Speed: Shift 2">
+                    </div>
+            </div>
+        </section>
+
+        <footer id="Fale-Conosco">
+            <h2>Fale Conosco</h2>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa-brands fa-github"></i></span>GitHub</li>
+                    <li><span class="fa-li"><i class="fa-brands fa-linkedin"></i></span>Linkedin</li>
+                    <li><span class="fa-li"><i class="fa-brands fa-instagram"></i></i></span>Instagram</li>
+                    <li><span class="fa-li"><i class="fa-brands fa-whatsapp"></i></i></span>Whatsapp</li>
+                </ul>
+        </footer>
+
+        <!--Modal-->
+        <div id="modalMaisInfo" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<i class="fa-solid fa-circle-xmark close"></i>
+					<video width="100%" height="60%" controls muted>
+						<source src="trailer/MarioTrailer.mp4" type="video/mp4">
+						Seu navegador não suporta a tag de vídeo.
+					</video>
+				</div>
+				
+				<div class="modal-body">
+					<table>
+					    <caption><i class="fa-solid fa-circle-info"></i>Mais Informações</caption>
+						    <tbody>
+							    <tr>
+								    <td class="colTitulo">
+									    Avaliação:
+								    </td>
+								    <td class="colDesc">
+									    <i class="fa-solid fa-star"></i>
+									    <i class="fa-solid fa-star"></i>
+									    <i class="fa-solid fa-star"></i>
+									    <i class="fa-solid fa-star"></i>
+									    <i class="fa-solid fa-star"></i>
+								    </td>
+							    </tr>
+							    <tr>
+								    <td class="colTitulo">
+									    Ano lançamento:
+								    </td>
+								    <td class="colDesc">
+									    1993
+								    </td>
+							    </tr>
+							    <tr>
+								    <td class="colTitulo">
+									    Fabricante:
+								    </td>
+								    <td class="colDesc">
+									    Nintendo
+								    </td>
+							    </tr>
+							    <tr>
+								    <td class="colTitulo">
+                                        Gêneros:
+								    </td>
+								    <td class="colDesc">
+									    2D, Aventura, Coletânea, Plataforma
+								    </td>
+							    </tr>
+						    </tbody>
+					</table>
+				</div>
+			</div>
+		</div>   
+
+        <!--Scripts -->
         <script src="js/owl/jquery.min.js"></script>
         <script src="js/owl/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
